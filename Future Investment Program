@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class AssignmentTwo {
+    public static void main(String[] args){
+    //scanner statment
+    Scanner kbScanner = new Scanner(System.in);
+    //Enter intial investment
+    System.out.println("Enter the initial investment amount: ");
+    double IntialInvestmentAmount = kbScanner.nextDouble();
+
+    System.out.println("Enter the annual interest rate: ");
+    double AnnualInterestRate = kbScanner.nextDouble();
+
+    System.out.println("Enter the number of years: ");
+    int years = kbScanner.nextInt();
+
+    double monthlyInterestRate = AnnualInterestRate / 100 / 12;
+
+    double futureValue = IntialInvestmentAmount * Math.pow(1 + monthlyInterestRate, years * 12);
+
+    System.out.print("The Future value is $ " + futureValue );
+
+    kbScanner.close();
+
+    }
+}

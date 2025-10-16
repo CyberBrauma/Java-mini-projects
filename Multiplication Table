@@ -1,0 +1,10 @@
+public class MultiplicationTable{
+    public static void main(String[] args){
+        //Multiplication of 2 and number we are looking for is 2
+        int num=2;
+        for(int mul=1; mul<=12; mul++ ){
+            System.out.println(num + " x " + mul + " = " + num*mul);
+        }
+        
+    }
+}

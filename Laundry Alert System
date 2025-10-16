@@ -1,0 +1,18 @@
+public class LaundryAlertSystem {
+    public static void main(String[] args){
+
+    //declare boolean varaibles for true and false
+    boolean hasShift = Math.random() < 0.5;
+    boolean isUniformClean = Math.random() < 0.5;
+     
+    //if statements
+    if(hasShift && !isUniformClean){
+        System.out.println("Please clean your laundry! ");
+    }
+    else{
+       System.out.println("You don't have to clean your laundry!");
+    }
+    }
+
+
+}

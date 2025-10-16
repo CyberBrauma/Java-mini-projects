@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Physics {
+    public static void main(String[] args){
+    Scanner input = new Scanner(System.in);
+   
+    //prompt user to input takeoff speed
+    System.out.print("Enter speed v: ");
+    double v = input.nextDouble();
+
+    //prompt user to input acceleration
+    System.out.print("Enter acceleration a: ");
+    double a = input.nextDouble();
+
+    //display minimum runaway length
+    double length = v * v / (2*a);
+    System.out.println("The minimum runaway length for this airplane is " + length);
+
+
+   
+
+    }
+}

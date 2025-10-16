@@ -1,0 +1,21 @@
+public class ShiftReminderSystem {
+    public static void main(String[] args){
+//declare boolean for true or false
+   boolean isScheduledToday = Math.random() < 0.5;
+   boolean isClockedIn = Math.random() < 0.5;
+
+   if(isScheduledToday = isClockedIn){
+    System.out.println("Get to work!");
+   }
+   else{
+    System.out.println("No reminder needed!");
+   }
+
+
+
+        
+}
+
+    
+}
+        
